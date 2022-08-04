@@ -16,7 +16,7 @@ public class CurrencyExchange {
 	private String to;
 	private BigDecimal conversionMultiple;
 	private String env;
-	
+	// add comment
 	public CurrencyExchange() {
 		super();
 		// TODO Auto-generated constructor stub
