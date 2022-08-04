@@ -11,6 +11,7 @@
 	<groupId>com.in28minutes.microservices</groupId>
 	<artifactId>currency-exchange-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>  
 	<name>currency-exchange-service</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -71,6 +72,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+    			<artifactId>maven-war-plugin</artifactId>
+    			<version>3.3.1</version>
 			</plugin>
 		</plugins>
 	</build>
