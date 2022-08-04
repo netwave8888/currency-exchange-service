@@ -1,6 +1,9 @@
 package com.in28minutes.microservices.currencyexchangeservice;
 
 import java.math.BigDecimal;
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -29,7 +32,7 @@ public class CurrencyExchangeController {
 
 		return "home";
 	}
-	
+
 	@GetMapping("/currency-exchange/from/{from}/to/{to}")
 	public CurrencyExchange retrieveExchangeValue(@PathVariable String from, @PathVariable String to) 
 	{
