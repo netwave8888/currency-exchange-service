@@ -20,7 +20,7 @@ public class CurrencyExchangeController {
 	@Autowired
 	private Environment env;
 	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@GetMapping("/")
 	public String home(Locale locale, Model model) {
 		System.out.println("Home Page Requested, locale = " + locale);
 		Date date = new Date();
